@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTA</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Font Setup */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* Light theme with a subtle linear gradient for depth */
+            background: linear-gradient(to bottom right, #f8fafc, #e2e8f0); /* Light blue/white gradient */
+        }
+        
+        /* Style for individual color blocks */
+        .color-block {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            border: 1px solid transparent;
+        }
+        .color-block:hover {
+            transform: translateX(4px);
+            /* Adjusted hover color for light theme */
+            background-color: rgba(20, 184, 166, 0.1); /* Light teal tint on hover */
+            border-color: #2dd4bf; /* Tailwind teal-400 */
+        }
+
+        /* The actual color swatch */
+        .swatch {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 12px;
+            /* Adjusted swatch border for light theme */
+            border: 1px solid rgba(0, 0, 0, 0.1); 
+            flex-shrink: 0;
+        }
+
+        /* Style for the category cards (3-column layout retained for desktop readability) */
+        .color-card {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            height: 100%; /* Ensure all cards are the same height */
+        }
+        .color-card:hover {
+            transform: translateY(-5px);
+            /* Adjusted shadow for light theme */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Slightly more pronounced lift shadow */
+        }
+    </style>
+</head>
+
+<body class="text-gray-900"> <!-- Main text color set to dark gray -->
+
+    <div class="container mx-auto p-4 sm:p-8 max-w-7xl">
+
+        <!-- Header Section -->
+        <header class="text-center mb-16"> 
+            <h1 class="text-5xl sm:text-7xl font-extrabold text-gray-900 leading-tight">
+                Website Color Palettes for Every <span class="text-teal-600">Emotion</span>
+            </h1>
+            <!-- Highlighted author line -->
+            <p class="text-lg font-medium text-teal-600 mb-6 mt-4">
+                — by Manoj Kumar Kakarla —
+            </p>
+            <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+                Amplify Your Reach: Discover the power of great color palettes to evoke emotion and drive action.
+            </p>
+        </header>
+
+        <!-- Color Categories Grid (3-column layout on desktop) -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+
+            <!-- 1. Trust & Professionalism (Blue/Grey Focus) -->
+            <div class="color-card bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-600">
+                <h3 class="text-2xl font-bold mb-4 text-blue-600 flex items-center">
+                    <span class="mr-2 text-3xl">🛡️</span> Trust & Professionalism
+                </h3>
+                <p class="text-sm text-gray-600 mb-3">Ideal for B2B, Finance, Healthcare, Tech.</p>
+                <div class="space-y-1">
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #0077B6;"></span>
+                        <span class="font-bold">Deep Ocean Blue</span>: Stability & Authority
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #495867;"></span>
+                        <span class="font-bold">Charcoal Grey</span>: Maturity & Formality
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #D9D9D9;"></span>
+                        <span class="font-bold">Light Platinum</span>: Cleanliness & Modernity
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #1A374D;"></span>
+                        <span class="font-bold">Midnight Teal</span>: Intelligence & Depth
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #14C38E;"></span>
+                        <span class="font-bold">Aqua Green</span>: Growth & Reliability
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #5F748B;"></span>
+                        <span class="font-bold">Slate Blue</span>: Honesty & Seriousness
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #2F2F2F;"></span>
+                        <span class="font-bold">Deep Lead</span>: Sophistication & Backbone
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #70A0CC;"></span>
+                        <span class="font-bold">Sky Grey</span>: Approachability & Openness
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #00A6FB;"></span>
+                        <span class="font-bold">Electric Blue</span>: Innovation & Tech Focus
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #EBEBEB;"></span>
+                        <span class="font-bold">Off-White</span>: Neutrality & Clarity
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Energy & Action (Red/Orange Focus) -->
+            <div class="color-card bg-white p-6 rounded-xl shadow-md border-t-4 border-red-600">
+                <h3 class="text-2xl font-bold mb-4 text-red-600 flex items-center">
+                    <span class="mr-2 text-3xl">🔥</span> Energy & Action
+                </h3>
+                <p class="text-sm text-gray-600 mb-3">Ideal for E-commerce sales, Gaming, Fitness/Sports.</p>
+                <div class="space-y-1">
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #FF4136;"></span>
+                        <span class="font-bold">Traffic Red</span>: Urgency & Excitement
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #FF851B;"></span>
+                        <span class="font-bold">Bright Orange</span>: Enthusiasm & Alertness
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #F7E733;"></span>
+                        <span class="font-bold">Safety Yellow</span>: Visibility & Optimism
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #E30B5C;"></span>
+                        <span class="font-bold">Fuchsia Pink</span>: Playfulness & Boldness
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #B10000;"></span>
+                        <span class="font-bold">Deep Maroon</span>: Power & Intensity
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #FF5A00;"></span>
+                        <span class="font-bold">Lava Orange</span>: Heat & Movement
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #4CAF50;"></span>
+                        <span class="font-bold">Primary Green</span>: Health & Positive Action
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #CC00CC;"></span>
+                        <span class="font-bold">Electric Violet</span>: Uniqueness & Focus
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #000000;"></span>
+                        <span class="font-bold">Jet Black</span>: Strength & Sophistication
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #FF7F50;"></span>
+                        <span class="font-bold">Coral Pink</span>: Warmth & Approachability
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Calm & Wellness (Green/Earth Tone Focus) -->
+            <div class="color-card bg-white p-6 rounded-xl shadow-md border-t-4 border-green-600">
+                <h3 class="text-2xl font-bold mb-4 text-green-600 flex items-center">
+                    <span class="mr-2 text-3xl">🌿</span> Calm & Wellness
+                </h3>
+                <p class="text-sm text-gray-600 mb-3">Ideal for Organic Products, Health, Spa, Environmental Non-profits.</p>
+                <div class="space-y-1">
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #38761D;"></span>
+                        <span class="font-bold">Forest Green</span>: Nature & Sustainability
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #93C572;"></span>
+                        <span class="font-bold">Sage Green</span>: Tranquility & Growth
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #B5651D;"></span>
+                        <span class="font-bold">Terracotta Brown</span>: Earthiness & Stability
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #87CEEB;"></span>
+                        <span class="font-bold">Sky Blue</span>: Purity & Openness
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #F8F8FF;"></span>
+                        <span class="font-bold">Ghost White</span>: Peace & Simplicity
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #6B8E23;"></span>
+                        <span class="font-bold">Olive Drab</span>: Comfort & Vintage
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #795548;"></span>
+                        <span class="font-bold">Dark Wood</span>: Reliability & Heritage
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #A0C2B9;"></span>
+                        <span class="font-bold">Dusty Teal</span>: Soothing & Reflective
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #F4A460;"></span>
+                        <span class="font-bold">Sandy Brown</span>: Natural Warmth
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #008080;"></span>
+                        <span class="font-bold">Dark Cyan</span>: Health & Clarity
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 4. Creative & Bold (Purple/Yellow Focus) -->
+            <div class="color-card bg-white p-6 rounded-xl shadow-md border-t-4 border-purple-600">
+                <h3 class="text-2xl font-bold mb-4 text-purple-600 flex items-center">
+                    <span class="mr-2 text-3xl">🎨</span> Creative & Bold
+                </h3>
+                <p class="text-sm text-gray-600 mb-3">Ideal for Design Portfolios, Arts, Entertainment, Fashion.</p>
+                <div class="space-y-1">
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #800080;"></span>
+                        <span class="font-bold">Vivid Purple</span>: Imagination & Royalty
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #FFD700;"></span>
+                        <span class="font-bold">Gold Yellow</span>: Luxury & Inspiration
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #FF69B4;"></span>
+                        <span class="font-bold">Hot Pink</span>: Energy & Trendiness
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #00FFFF;"></span>
+                        <span class="font-bold">Electric Cyan</span>: Digital & Futuristic
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #082D70;"></span>
+                        <span class="font-bold">Indigo Blue</span>: Wisdom & Stability
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #C0C0C0;"></span>
+                        <span class="font-bold">Silver Grey</span>: Modernity & Clean Lines
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #FF4500;"></span>
+                        <span class="font-bold">Orange-Red</span>: Attention-Grabbing
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #FF00FF;"></span>
+                        <span class="font-bold">Magenta</span>: Boldness & Creativity
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #3CB371;"></span>
+                        <span class="font-bold">Medium Sea Green</span>: Balance & Refreshment
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #FFA07A;"></span>
+                        <span class="font-bold">Light Salmon</span>: Warmth & Softness
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Luxury & Premium (Black/Gold Focus) -->
+            <div class="color-card bg-white p-6 rounded-xl shadow-md border-t-4 border-amber-600">
+                <h3 class="text-2xl font-bold mb-4 text-amber-600 flex items-center">
+                    <span class="mr-2 text-3xl">💎</span> Luxury & Premium
+                </h3>
+                <p class="text-sm text-gray-600 mb-3">Ideal for High-end Retail, Exclusive Services, Fine Dining.</p>
+                <div class="space-y-1">
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #000000;"></span>
+                        <span class="font-bold">Elegant Black</span>: Power & Exclusivity
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #C5B358;"></span>
+                        <span class="font-bold">Rich Gold</span>: Prestige & Quality
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #36454F;"></span>
+                        <span class="font-bold">Charcoal Blue</span>: Depth & Seriousness
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #708090;"></span>
+                        <span class="font-bold">Slate Gray</span>: Understated Elegance
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #B8860B;"></span>
+                        <span class="font-bold">Dark Goldenrod</span>: Warmth & Tradition
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #F5F5DC;"></span>
+                        <span class="font-bold">Cream Beige</span>: Softness & Comfort
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #8B0000;"></span>
+                        <span class="font-bold">Dark Red</span>: Passion & Drama
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #7F00FF;"></span>
+                        <span class="font-bold">Royal Purple</span>: Wisdom & Status
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #696969;"></span>
+                        <span class="font-bold">Dim Gray</span>: Balance & Reliability
+                    </div>
+                    <div class="color-block text-gray-700 hover:text-teal-600">
+                        <span class="swatch" style="background-color: #FFD700;"></span>
+                        <span class="font-bold">Accent Gold</span>: Highlight & Focus
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pro Tip Section -->
+        <div class="mt-16 bg-gray-100 p-6 rounded-xl border-l-4 border-teal-500 max-w-5xl mx-auto">
+            <h4 class="text-xl font-semibold text-teal-600 mb-3">💡 Pro Tip Recap: Color Psychology Essentials</h4>
+            <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                <li><span class="font-medium text-gray-900">The 60-30-10 Rule:</span> Use a dominant color (60%), a secondary color (30%), and an accent color (10%) for perfect balance.</li>
+                <li><span class="font-medium text-gray-900">Accent Colors:</span> Use high-contrast, energetic colors (like Red or Bright Orange) exclusively for your most important CTAs.</li>
+                <li><span class="font-medium text-gray-900">Accessibility First:</span> Always ensure sufficient contrast between your text and background colors (especially on dark themes) for legibility.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
